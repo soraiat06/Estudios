@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", Entra_st ) 
+document.addEventListener("DOMContentLoaded", st_entra ) 
 
-function Entra_st() {
+function st_entra() {
+    
     const listaprincipal = document.createElement('ol')
     document.body.prepend(listaprincipal)
     const contH2 = document.querySelectorAll('h2')
@@ -18,8 +19,8 @@ function Entra_st() {
 function f_criaçãodeLista(ref, texto) {
 
     const li = document.createElement('li')
-    const criarLink = f_criaçãodeLista(ref, texto)
-    li.appendChild(criarLink)
+    const criarLink = f_criaçãodeLink(ref, texto)
+    li.appendChild(criaçãodeLink)
 
     return li
 }
