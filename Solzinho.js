@@ -19,8 +19,8 @@ function st_entra() {
 function f_criaçãodeLista(ref, texto) {
 
     const li = document.createElement('li')
-    const criarLink = f_criaçãodeLink(ref, texto)
-    li.appendChild(criaçãodeLink)
+    const criarLink = f_criarLink(ref, texto)
+    li.appendChild(criarLink)
 
     return li
 }
