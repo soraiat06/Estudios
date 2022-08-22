@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", st_entra ) 
+document.addEventListener("DOMContentLoaded", f_load ) 
 
-function st_entra() {
+function f_load() {
     
     const listaprincipal = document.createElement('ol')
     document.body.prepend(listaprincipal)
