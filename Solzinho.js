@@ -1,25 +1,24 @@
-document.addEventListener('DOMContentLoaded', f_load)
+document.addEventListener("DOMContentLoaded", Entra_st ) 
 
-function f_load() {
-
-    const listaMae = document.createElement('ol')
-    document.body.prepend(listaMae)
+function Entra_st() {
+    const listaprincipal = document.createElement('ol')
+    document.body.prepend(listaprincipal)
     const contH2 = document.querySelectorAll('h2')
 
     for (let i = 0; i < contH2.length; i++) {
 
-        const elementos = f_criarLista(`#h2${i + 1}`, contH2[i].textContent)
-        listaMae.appendChild(elementos)
+        const elementos = f_criaçãodeLista(`#h2${i + 1}`, contH2[i].textContent)
+        listaprincipal.appendChild(elementos)
         mudarH2(contH2[i], i + 1)
 
     }
 }
 
 // Adicionando os h2 na lista (ol)
-function f_criarLista(ref, texto) {
+function f_criaçãodeLista(ref, texto) {
 
     const li = document.createElement('li')
-    const criarLink = f_criarLink(ref, texto)
+    const criarLink = f_criaçãodeLista(ref, texto)
     li.appendChild(criarLink)
 
     return li
@@ -48,3 +47,6 @@ function f_inserirDepois(elemento, ref) {
     const nextElement = elemento.nextElementSibling
     elemento.parentElement.insertBefore(ref, nextElement)
 }
+
+
+  
