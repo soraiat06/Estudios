@@ -39,7 +39,7 @@ function f_criarLink(href, texto) {
 function mudarH2(elemento, num) {
     elemento.textContent = `${num}. ${elemento.textContent}`
     elemento.id = `h2${num}`
-    const voltar = f_criarLink('#', 'Voltar')
+    const voltar = f_criarLink('#', 'Regresando ya')
     f_inserirDepois(elemento, voltar)
 }
 
