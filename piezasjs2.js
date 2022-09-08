@@ -1,3 +1,4 @@
+
 const tamanhoCelula = 40
 let pecaId = 0
 let imgid 
